@@ -1,0 +1,42 @@
+<div class="tl-header row">
+  <div class="col-md-5 row logo-col">
+    <div class="logo-wrapper col-md-6">
+      <a
+        *ngIf="showDesktopLogoLink"
+        rel="home"
+        routerLink="/home"
+        class="logo"
+        [attr.aria-label]="'common.home.link' | translate"
+        data-testing-id="header-home-link-desktop"
+      ></a>
+      <a
+        *ngIf="showMobileLogoLink"
+        rel="home"
+        routerLink="/home"
+        class="mobile-logo"
+        [attr.aria-label]="'common.home.link' | translate"
+        data-testing-id="header-home-link-mobile"
+      ></a>
+    </div>
+    <input class="form-control searchTerm col-md-6" autocomplete="off" type="text" />
+  </div>
+
+  <div class="tl-account col-md-2 row">
+    <div class="col-md-6" *ngIf="!isSticky && deviceType !== 'mobile'">
+      <ish-login-status data-testing-id="user-status-desktop"></ish-login-status>
+    </div>
+    <ish-mini-basket
+      data-testing-id="mini-basket-desktop"
+      view="full"
+      class="d-none col-md-6"
+      [ngClass]="isSticky ? 'd-lg-block' : 'd-md-block'"
+    ></ish-mini-basket>
+  </div>
+
+  <div class="tl-sp row col-md-5">
+    <li class="col-md-3">eShop</li>
+    <li class="col-md-3">Schweißtechnik</li>
+    <li class="col-md-3">Karriere</li>
+    <li class="col-md-3">Unternehmen</li>
+  </div>
+</div>

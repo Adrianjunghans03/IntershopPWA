@@ -1,0 +1,27 @@
+///////////////////////////////////////////////////////////////////////////////
+//
+// THEME SPECIFIC CONFIGURATION
+//
+///////////////////////////////////////////////////////////////////////////////
+
+//fonts
+@import 'fonts/open-sans';
+
+// set theme specific variables
+@import 'variables';
+
+// import general main theme
+@import '../../main';
+
+// technolit specific styles
+@import 'component/header/header';
+@import 'component/header/header-sticky';
+
+// customizations
+.badge-primary {
+  background-color: #1db5b5;
+}
+
+.badge.border-primary {
+  border-color: #1db5b5 !important;
+}

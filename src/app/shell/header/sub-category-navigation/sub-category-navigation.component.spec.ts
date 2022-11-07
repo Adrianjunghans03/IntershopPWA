@@ -66,7 +66,7 @@ describe('Sub Category Navigation Component', () => {
             ng-reflect-category-unique-id="A.1"
             ng-reflect-sub-categories-depth="2"
             ><ul class="category-level2">
-              <li class="main-navigation-level2-item">
+
                 <a ng-reflect-router-link="/CAT_A1a-catA.1.a" style="width: 100%" href="/CAT_A1a-catA.1.a"
                   >CAT_A1a</a
                 >

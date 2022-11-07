@@ -1,0 +1,46 @@
+/************************  Global Header ******************************/
+header {
+  &::before {
+    height: 0;
+  }
+
+  .logo-col {
+    align-items: center;
+  }
+
+  .my-account-link {
+    display: grid;
+    text-align: center;
+  }
+
+  .tl-header-bar {
+    width: 100%;
+    height: 20px;
+    background-color: $text-color-corporate;
+  }
+
+  .tl-sp {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+
+  .logo-wrapper {
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .tl-sm-font {
+    font-size: 10px;
+  }
+
+  .quick-cart-link {
+    padding: 0;
+    margin-left: 0;
+  }
+
+  .tl-account {
+    align-items: center;
+  }
+}

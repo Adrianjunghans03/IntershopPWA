@@ -35,7 +35,8 @@
         }
 
         > .dropdown-toggle {
-          display: block;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
           width: $toggler-width;
           text-align: center;
           border-left: $border-width-default solid $border-color-default;

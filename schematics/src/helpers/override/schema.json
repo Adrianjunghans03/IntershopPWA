@@ -28,7 +28,7 @@
     },
     "theme": {
       "type": "string",
-      "enum": ["b2b", "b2c", "all"],
+      "enum": ["technolit", "b2b", "b2c", "all"],
       "x-prompt": "For which theme?"
     },
     "ts": {

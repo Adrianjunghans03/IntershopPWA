@@ -15,7 +15,7 @@
       },
       "root": "",
       "sourceRoot": "src",
-      "prefix": "ish",
+      "prefix": "custom",
       "architect": {
         "build": {
           "builder": "@angular-builders/custom-webpack:browser",
@@ -46,7 +46,7 @@
             "sourceMap": true,
             "allowedCommonJsDependencies": ["fast-sha256"]
           },
-          "defaultConfiguration": "b2b,production",
+          "defaultConfiguration": "technolit,production",
           "configurations": {
             "production": {
               "outputHashing": "all",
@@ -101,7 +101,8 @@
               ]
             },
             "b2b": {},
-            "b2c": {}
+            "b2c": {},
+            "technolit": {}
           }
         },
         "serve": {
@@ -109,7 +110,7 @@
           "options": {
             "browserTarget": "intershop-pwa:build"
           },
-          "defaultConfiguration": "b2b,development",
+          "defaultConfiguration": "technolit,development",
           "configurations": {
             "production": {
               "browserTarget": "intershop-pwa:build:production"
@@ -122,6 +123,9 @@
             },
             "b2c": {
               "browserTarget": "intershop-pwa:build:b2c"
+            },
+            "technolit": {
+              "browserTarget": "intershop-pwa:build:technolit"
             }
           }
         },
@@ -153,12 +157,13 @@
             },
             "sourceMap": true
           },
-          "defaultConfiguration": "b2b,production",
+          "defaultConfiguration": "technolit,production",
           "configurations": {
             "production": {},
             "development": {},
             "b2b": {},
-            "b2c": {}
+            "b2c": {},
+            "technolit": {}
           }
         },
         "serve-ssr": {
@@ -167,7 +172,7 @@
             "browserTarget": "intershop-pwa:build",
             "serverTarget": "intershop-pwa:server"
           },
-          "defaultConfiguration": "b2b",
+          "defaultConfiguration": "technolit",
           "configurations": {
             "b2b": {
               "browserTarget": "intershop-pwa:build:b2b,development",
@@ -176,6 +181,10 @@
             "b2c": {
               "browserTarget": "intershop-pwa:build:b2c,development",
               "serverTarget": "intershop-pwa:server:b2c,development"
+            },
+            "technolit": {
+              "browserTarget": "intershop-pwa:build:technolit,development",
+              "serverTarget": "intershop-pwa:server:technolit,development"
             }
           }
         }
@@ -188,7 +197,7 @@
       },
       "root": "projects/organization-management",
       "sourceRoot": "projects/organization-management/src",
-      "prefix": "ish",
+      "prefix": "custom",
       "architect": {
         "build": {
           "builder": "@angular-builders/custom-webpack:browser",
@@ -235,7 +244,7 @@
       },
       "root": "projects/requisition-management",
       "sourceRoot": "projects/requisition-management/src",
-      "prefix": "ish",
+      "prefix": "custom",
       "architect": {
         "build": {
           "builder": "@angular-builders/custom-webpack:browser",
