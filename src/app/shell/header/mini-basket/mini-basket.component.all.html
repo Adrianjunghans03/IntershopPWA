@@ -4,9 +4,9 @@
   ishClickOutside
   (isClickedOutside)="collapse()"
 >
-  <a (click)="toggleCollapse()">
+  <a class="tl-cart" (click)="toggleCollapse()">
     <fa-icon [icon]="['fas', 'shopping-cart']" class="header-icon"></fa-icon>
-    <br />
+
     <span class="tl-sm-font">{{ 'shopping_cart.ministatus.items.text' | translate: { '0': itemCount$ | async } }}</span>
     <ng-container *ngIf="itemTotal$ | async as itemTotal">
       <span> / </span> <span class="mini-cart-price">{{ itemTotal | ishPrice }}</span>

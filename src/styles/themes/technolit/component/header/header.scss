@@ -21,26 +21,51 @@ header {
 
   .tl-sp {
     display: flex;
+    column-gap: 12px;
     align-items: center;
+    font-family: $font-family-bold;
+    color: $gray-500-tl;
     list-style: none;
   }
 
   .logo-wrapper {
-    align-items: center;
     padding-top: 0;
     padding-bottom: 0;
   }
 
   .tl-sm-font {
-    font-size: 10px;
+    font-size: 8px;
   }
 
   .quick-cart-link {
     padding: 0;
     margin-left: 0;
+    background-color: white;
+  }
+
+  .header-icon {
+    display: grid;
+    justify-content: center;
+  }
+
+  .tl-cart {
+    display: grid;
+    align-items: center;
   }
 
   .tl-account {
     align-items: center;
+  }
+
+  .tl-header {
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+    margin-top: 16px;
+  }
+
+  .tl-searchbar {
+    display: flex;
+    column-gap: 20px;
   }
 }

@@ -24,10 +24,11 @@ $default-color-adjust: 10%;
 
 //
 // FONTS
-$font-family-regular: 'robotoregular', 'Helvetica', 'Arial', sans-serif;
-$font-family-bold: 'robotobold', 'Helvetica', 'Arial', sans-serif;
-$font-family-condensedregular: 'roboto_condensedregular', 'Helvetica Neue', helvetica, 'Arial', sans-serif;
-$font-family-condensedbold: 'roboto_condensedbold', 'Helvetica Neue', helvetica, 'Arial', sans-serif;
+$font-family-regular: 'OpenSans-400', 'robotoregular', 'Helvetica', 'Arial', sans-serif;
+$font-family-bold: 'OpenSans-700', 'Helvetica', 'Arial', sans-serif;
+$font-family-condensedregular: 'OpenSans-400', 'roboto_condensedregular', 'Helvetica Neue', helvetica, 'Arial',
+  sans-serif;
+$font-family-condensedbold: 'OpenSans-700', 'roboto_condensedbold', 'Helvetica Neue', helvetica, 'Arial', sans-serif;
 
 //
 // FONT SIZES
@@ -165,6 +166,7 @@ $gray-200: #e9ecef;
 $gray-300: #dee2e6;
 $gray-400: #ced4da;
 $gray-500: #adb5bd;
+$gray-500-tl: #7d7d7d;
 $gray-600: #6c757d;
 $gray-700: #495057;
 $gray-800: #343a40;
