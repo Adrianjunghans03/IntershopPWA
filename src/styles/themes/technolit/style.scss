@@ -5,13 +5,19 @@
 ///////////////////////////////////////////////////////////////////////////////
 
 //fonts
-@import 'fonts/open-sans';
+@import 'global/fonts/open-sans';
 
 // set theme specific variables
 @import 'variables';
 
 // import general main theme
 @import '../../main';
+
+//product
+@import 'pages/category/product-list';
+
+//global fonts
+@import 'global/global';
 
 // technolit specific styles
 @import 'component/header/header';
